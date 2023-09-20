@@ -12,7 +12,6 @@ def enemys(enemy):
     elif enemy == 2:
         eHP = 50
         edamage = 20
-    print (edamage)
     return eHP, edamage
 def fight(HP, eHP):
     import random

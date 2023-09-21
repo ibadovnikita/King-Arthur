@@ -32,7 +32,7 @@ def fight(HP, eHP):
     N=1
     while HP > 0 and eHP > 0:
         print('Номер хода:', N)
-        answer = int(input("куда бьёшь 1 = голова,2 = тело, 3 = руки,4 = ноги"))
+        answer = int(input(" Куда вы хотити ударить 1 = голова,2 = тело, 3 = ноги,4 = руки: "))
         print(answer)
         if answer == 2:
             roll = random.randint(0, 100)
@@ -70,7 +70,7 @@ def fight(HP, eHP):
                     print("У врага не осталось ХП ")
             else:
                 print("Ты промахнулся")
-        else:
+        elif answer == 4:
             roll = random.randint(0, 100)
             if roll >= 60:
                 damage = random.randint(1, 20)
